@@ -5,7 +5,8 @@ using namespace std;
 #define DEBUG false
 
 int add_numbers(int &x, int y){
-		return x+=y;
+		returnvalue= x+=y;
+		return returnvalue;
 }
 
 int main(){
@@ -22,12 +23,15 @@ int main(){
 	}
 	 */
 	
+	int change=0;
 	int num1=5;
 	int num2=300;
-	
-	cout << "Adding 5 to 500: " << add_numbers(num1,num2) << endl;
-	cout << "Adding 5 to 500: " << add_numbers(num1,num2) << endl;
-	cout << "Adding 5 to 500: " << add_numbers(num1,num2) << endl;
+	add_numbers(change,num1,num2);
+	cout << "Adding 5 to 500: " << change << endl;
+	add_numbers(change,num1,num2);
+	cout << "Adding 5 to 500: " << change << endl;
+	add_numbers(change,num1,num2);
+	cout << "Adding 5 to 500: " << change << endl;
 	
 	return 0;
 }
